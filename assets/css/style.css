@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: wheat;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.column.side h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+
+.column.side {
+    width: 25%;
+    background-color: #aaaaaa;
+    background-size: cover;
+    
+}
+
+.column.middle {
+    width: 75%;
+  }
+.column.middle h1 {
+    font-size: 40px;
+    background-color: wheat;
+    color: white;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.products {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 400px;
+    margin: 20px;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    body,
+    head {
+      flex-direction: column;
+    }
+  }
